@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'com.netflix.feign:feign-core:8.18.0'
+    implementation 'org.testng:testng:7.5'
+    compile group: 'com.netflix.feign', name: 'feign-gson', version: '5.4.1'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.azure:azure-core-serializer-json-gson:1.1.15'
+    compile group: 'io.github.openfeign', name: 'feign-jackson', version: '9.7.0'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.13.3'
+    compile group: 'org.apache.avro', name: 'avro', version: '1.8.2'
+    compile group: 'org.springframework', name: 'spring-web', version: '3.0.7.RELEASE'
+    compile group: 'commons-io', name: 'commons-io', version: '2.5'
+    implementation 'com.github.aquality-automation:aquality-appium-mobile:3.0.0-beta'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
+
+}
+
+test {
+    useTestNG()
+}
