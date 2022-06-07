@@ -1,23 +1,18 @@
 package utils;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.Charsets;
 import com.google.gson.Gson;
-import feign.Feign;
 import feign.Response;
-import feign.gson.GsonDecoder;
 import models.Post;
 import models.User;
 import org.apache.commons.io.IOUtils;
-
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-import static utils.JsonPlaceholder.jsonPlaceholder;
 
 public class ApiUtils {
 

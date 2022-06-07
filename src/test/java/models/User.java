@@ -106,19 +106,15 @@ public class User {
     public void setId(int id) {
         this.id = id;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public void setUserName(String userName) {
         this.userName = userName;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
-
     public void setCity(String city) {
         address.city = city;
     }
@@ -137,15 +133,12 @@ public class User {
     public void setLng(String lng) {
         address.geo.lng = lng;
     }
-
     public void setPhone(String phone) {
         this.phone = phone;
     }
-
     public void setWebsite(String website) {
         this.website = website;
     }
-
     public void setCompanyName(String companyName) {
         company.name = companyName;
     }

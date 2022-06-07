@@ -4,11 +4,7 @@ import enums.FileNames;
 import enums.Paths;
 import models.Post;
 import models.User;
-import org.omg.CORBA.PUBLIC_MEMBER;
-import org.omg.PortableServer.POA;
-import utils.ApiUtils;
 import utils.PropertyUtils;
-import utils.StringUtils;
 
 public class Parameters {
     public static User getExpectedUser(){

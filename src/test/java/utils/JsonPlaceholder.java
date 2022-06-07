@@ -1,17 +1,10 @@
 package utils;
 
-import enums.Endpoints;
 import enums.FileNames;
-
-import enums.HttpMethods;
 import enums.Paths;
 import feign.*;
 import feign.gson.GsonDecoder;
 import feign.gson.GsonEncoder;
-import models.Post;
-import models.User;
-
-import java.util.List;
 
 public interface JsonPlaceholder {
 
@@ -35,5 +28,5 @@ public interface JsonPlaceholder {
     JsonPlaceholder jsonPlaceholder = Feign.builder()
             .encoder(new GsonEncoder())
             .decoder(new GsonDecoder())
-            .target(JsonPlaceholder.class, "https://jsonplaceholder.typicode.com");
+            .target(JsonPlaceholder.class, PropertyUtils.readDataFromFiles("HOST", Paths.RESOURCE, FileNames.CONFIG));
 }
