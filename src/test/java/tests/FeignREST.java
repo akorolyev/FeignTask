@@ -1,24 +1,12 @@
 package tests;
 
-import avro.shaded.com.google.common.collect.Ordering;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.common.base.Charsets;
-import com.google.common.reflect.TypeToken;
-import com.google.gson.Gson;
 import data.Parameters;
 import enums.ContentTypes;
 import enums.FileNames;
 import enums.Paths;
 import enums.Statuses;
 import feign.Response;
-import javafx.geometry.Pos;
-import models.Post;
-import models.User;
 
-import org.apache.commons.io.IOUtils;
-import org.checkerframework.checker.units.qual.A;
-import org.springframework.http.HttpStatus;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.ApiUtils;
@@ -27,12 +15,6 @@ import utils.PropertyUtils;
 import utils.StringUtils;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.lang.reflect.Array;
-import java.lang.reflect.Type;
-import java.util.*;
-
-import static com.fasterxml.jackson.databind.cfg.CoercionInputShape.Array;
 
 public class FeignREST extends BaseTest {
 
